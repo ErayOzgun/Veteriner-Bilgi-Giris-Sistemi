@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sayfabackground"
+    tools:context="com.vuralsoftware.vbgs.fragments.hayvanbilgigenel.Hayvanbilgigenel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="411dp"
+                    android:layout_height="408dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:id="@+id/a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="120dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Küpe Numarası :"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="68dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Yaş :"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/c" />
+
+                        <TextView
+                            android:id="@+id/c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Cins :"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/d" />
+
+                        <TextView
+                            android:id="@+id/d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="68dp"
+                            android:layout_marginTop="64dp"
+                            android:text="Tür :"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/a" />
+
+                        <TextView
+                            android:id="@+id/e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Cinsiyet :"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/b" />
+
+                        <TextView
+                            android:id="@+id/f"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Hayvan Sahibi :"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/e" />
+
+                        <TextView
+                            android:id="@+id/g"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Hayvan Sahibi İletişim :"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/f" />
+
+
+                        <TextView
+                            android:id="@+id/bilgi_kupegenel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="169dp"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginEnd="184dp"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/a" />
+
+                        <TextView
+                            android:id="@+id/bilgi_turgenel"
+                            android:layout_width="197dp"
+                            android:layout_height="37dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="104dp"
+                            android:text="aa"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toEndOf="@+id/d"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/bilgi_cinsgenel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="12dp"
+                            android:text="ff"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toEndOf="@+id/c"
+                            app:layout_constraintTop_toBottomOf="@+id/bilgi_turgenel" />
+
+                        <TextView
+                            android:id="@+id/bilgi_yasgenel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="23"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toEndOf="@+id/b"
+                            app:layout_constraintTop_toBottomOf="@+id/bilgi_cinsgenel" />
+
+                        <TextView
+                            android:id="@+id/bilgi_cinsiyetgenel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="248dp"
+                            android:text="hgghg"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toEndOf="@+id/e"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/bilgi_sahipgenel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="jh"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toEndOf="@+id/f"
+                            app:layout_constraintTop_toBottomOf="@+id/bilgi_cinsiyetgenel" />
+
+                        <TextView
+                            android:id="@+id/bilgi_adresgenel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="300dp"
+                            android:text="jg"
+                            android:textColor="#070707"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toEndOf="@+id/g"
+                            app:layout_constraintTop_toBottomOf="@+id/a" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/btnilacgenel"
+                    android:layout_width="354dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:text="İlaçlar" />
+
+                <Button
+                    android:id="@+id/btnasi"
+                    android:layout_width="352dp"
+                    android:layout_height="59dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="Aşılar" />
+
+                <Button
+                    android:id="@+id/btnhyvekle"
+                    android:layout_width="352dp"
+                    android:layout_height="59dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="Hayvanlarıma Ekle" />
+
+        </LinearLayout>
+
+</FrameLayout>

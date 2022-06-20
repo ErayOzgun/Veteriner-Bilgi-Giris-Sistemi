@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sayfabackground"
+    tools:context="com.vuralsoftware.vbgs.fragments.hayvanekle.Hayvanekle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clhayvenekle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="-23dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/kupeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="101dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Küpe Numarası :"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/yas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="101dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Yas :"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/hayvansahibi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="101dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Hayvan Sahibi :"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:minHeight="48dp"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/cins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="101dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Cins : "
+                    android:inputType="textCapWords|textCapSentences"
+                    android:minHeight="48dp"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/sahipiletisim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="101dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Hayvan Sahibi İletişim :"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:minHeight="48dp"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/tur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="101dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Tür :"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:minHeight="48dp"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/hayvankayitad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="101dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Hayvan Kayıt Adı :"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:minHeight="48dp"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/cinsiyet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="101dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Cinsiyet :"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:minHeight="48dp"
+                    android:textColorHint="#000000" />
+
+                <Button
+                    android:id="@+id/kaydetbtnhayvan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="72dp"
+                    android:text="Kaydet" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

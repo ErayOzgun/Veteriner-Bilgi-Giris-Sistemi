@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sayfabackground"
+    tools:context="com.vuralsoftware.vbgs.fragments.anasayfa.Anasayfa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="305dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="Veteriner Bilgi Giriş Sistemi  VBGS"
+            android:textAlignment="center"
+            android:textColor="#FF9E37"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="304dp"
+            android:layout_height="272dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="#FF9E37"
+            android:foregroundGravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            tools:layout_editor_absoluteX="54dp" />
+
+        <Button
+            android:id="@+id/hyvnlar"
+            android:layout_width="339dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Hayvanlarım"
+            app:backgroundTint="#FF9E37"
+            app:icon="@drawable/hayvanlar"
+            app:iconSize="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/hyvsorgula"
+            android:layout_width="339dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="Hayvan Sorgula"
+            app:backgroundTint="#FFFF9E37"
+            app:icon="@drawable/hayvansorgula"
+            app:iconSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hyvnlar" />
+
+        <Button
+            android:id="@+id/ntlar"
+            android:layout_width="339dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Notlar"
+            app:backgroundTint="#FFFF9E37"
+            app:icon="@android:drawable/stat_notify_chat"
+            app:iconSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hyvsorgula" />
+    </LinearLayout>
+
+</FrameLayout>

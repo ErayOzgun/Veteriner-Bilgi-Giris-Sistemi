@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sayfabackground"
+    tools:context="com.vuralsoftware.vbgs.fragments.genelnotekle.Genelnotekle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/notekle_baslik"
+            android:layout_width="284dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="144dp"
+            android:background="@drawable/input2"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Not Başlığı"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/notekle_not"
+            android:layout_width="285dp"
+            android:layout_height="283dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="32dp"
+            android:background="#FCD762"
+            android:ems="10"
+            android:gravity="center|top"
+            android:hint="Notunuzu giriniz :"
+            android:inputType="textMultiLine"
+            android:textColorHint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notekle_baslik" />
+
+        <Button
+            android:id="@+id/kaydetbtnnot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="Kaydet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notekle_not" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

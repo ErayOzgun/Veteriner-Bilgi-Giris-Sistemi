@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/nav_Anasayfa">
+
+    <fragment
+        android:id="@+id/nav_Profil"
+        android:name="com.vuralsoftware.vbgs.fragments.profil.Profil"
+        android:label="@string/menu_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/nav_Anasayfa"
+        android:name="com.vuralsoftware.vbgs.fragments.anasayfa.Anasayfa"
+        android:label="@string/menu_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/action_nav_Anasayfa_to_nav_GenelNotlar"
+            app:destination="@id/nav_GenelNotlar" />
+        <action
+            android:id="@+id/action_nav_Anasayfa_to_nav_Hayvanlar"
+            app:destination="@id/nav_Hayvanlar" />
+        <action
+            android:id="@+id/action_nav_Anasayfa_to_nav_HayvanSorgula"
+            app:destination="@id/nav_HayvanSorgula" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Hayvanlar"
+        android:name="com.vuralsoftware.vbgs.fragments.hayvanlarim.Hayvanlar"
+        android:label="@string/hayvanlar"
+        tools:layout="@layout/fragment_hayvanlar" >
+        <action
+            android:id="@+id/action_nav_Hayvanlar_to_nav_HayvanBilgi"
+            app:destination="@id/nav_HayvanBilgi" />
+        <action
+            android:id="@+id/action_nav_Hayvanlar_to_nav_HayvanEkle"
+            app:destination="@id/nav_HayvanEkle" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_HayvanEkle"
+        android:name="com.vuralsoftware.vbgs.fragments.hayvanekle.Hayvanekle"
+        android:label="@string/menu_hayvan"
+        tools:layout="@layout/fragment_hayvanekle" >
+        <action
+            android:id="@+id/action_nav_HayvanEkle_to_nav_Hayvanlar"
+            app:destination="@id/nav_Hayvanlar" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Disaktar"
+        android:name="com.vuralsoftware.vbgs.fragments.disaktar.Disaktar"
+        android:label="@string/menu_disaaktar"
+        tools:layout="@layout/fragment_disaktar" />
+    <fragment
+        android:id="@+id/nav_IlacEkle"
+        android:name="com.vuralsoftware.vbgs.fragments.ilacekle.Ilacekle"
+        android:label="@string/menu_ilac"
+        tools:layout="@layout/fragment_ilac" >
+        <action
+            android:id="@+id/action_nav_IlacEkle_to_nav_Ilaclar"
+            app:destination="@id/nav_Ilaclar" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_HayvanBilgi"
+        android:name="com.vuralsoftware.vbgs.fragments.hayvanbilgi.Hayvanbilgi"
+        android:label="Hayvan Bilgisi"
+        tools:layout="@layout/fragment_hayvanbilgi" >
+        <action
+            android:id="@+id/action_nav_HayvanBilgi_to_nav_Notlar"
+            app:destination="@id/nav_Notlar" />
+        <action
+            android:id="@+id/action_nav_HayvanBilgi_to_nav_Ilaclar"
+            app:destination="@id/nav_Ilaclar" />
+        <action
+            android:id="@+id/action_nav_HayvanBilgi_to_nav_Asilar"
+            app:destination="@id/nav_Asilar" />
+        <action
+            android:id="@+id/action_nav_HayvanBilgi_to_nav_PDF"
+            app:destination="@id/nav_PDF" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Notlar"
+        android:name="com.vuralsoftware.vbgs.fragments.notlar.Notlar"
+        android:label="Notlar"
+        tools:layout="@layout/fragment_notlar" >
+        <action
+            android:id="@+id/action_nav_Notlar_to_nav_Notekle"
+            app:destination="@id/nav_Notekle" />
+        <action
+            android:id="@+id/action_nav_Notlar_to_nav_NotDetay"
+            app:destination="@id/nav_NotDetay" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Notekle"
+        android:name="com.vuralsoftware.vbgs.fragments.notekle.Notekle"
+        android:label="Not Ekle"
+        tools:layout="@layout/fragment_notekle" >
+        <action
+            android:id="@+id/action_nav_Notekle_to_nav_Notlar"
+            app:destination="@id/nav_Notlar" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Ilaclar"
+        android:name="com.vuralsoftware.vbgs.fragments.ilaclar.Ilaclar"
+        android:label="İlaçlar"
+        tools:layout="@layout/fragment_ilaclar" >
+        <action
+            android:id="@+id/action_nav_Ilaclar_to_nav_IlacEkle"
+            app:destination="@id/nav_IlacEkle" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_AsiEkle"
+        android:name="com.vuralsoftware.vbgs.fragments.asiekle.Asiekle"
+        android:label="Aşı Ekle"
+        tools:layout="@layout/fragment_asiekle" >
+        <action
+            android:id="@+id/action_nav_AsiEkle_to_nav_Asilar"
+            app:destination="@id/nav_Asilar" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Asilar"
+        android:name="com.vuralsoftware.vbgs.fragments.asılar.asilar"
+        android:label="Aşılar"
+        tools:layout="@layout/fragment_asilar" >
+
+        <action
+            android:id="@+id/action_nav_Asilar_to_nav_AsiEkle"
+            app:destination="@id/nav_AsiEkle" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_HayvanSorgula"
+        android:name="com.vuralsoftware.vbgs.fragments.hayvansorgula.Hayvansorgula"
+        android:label="Hayvan Sorgula"
+        tools:layout="@layout/fragment_hayvansorgula" >
+        <action
+            android:id="@+id/action_nav_HayvanSorgula_to_nav_HayvanBilgiGenel"
+            app:destination="@id/nav_HayvanBilgiGenel" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_HayvanBilgiGenel"
+        android:name="com.vuralsoftware.vbgs.fragments.hayvanbilgigenel.Hayvanbilgigenel"
+        android:label="Hayvan Bilgi"
+        tools:layout="@layout/fragment_hayvanbilgigenel" >
+        <action
+            android:id="@+id/action_nav_HayvanBilgiGenel_to_nav_Ilaclar"
+            app:destination="@id/nav_Ilaclar" />
+        <action
+            android:id="@+id/action_nav_HayvanBilgiGenel_to_nav_HayvanSorgula"
+            app:destination="@id/nav_HayvanSorgula" />
+        <action
+            android:id="@+id/action_nav_HayvanBilgiGenel_to_nav_Asilar"
+            app:destination="@id/nav_Asilar" />
+        <action
+            android:id="@+id/action_nav_HayvanBilgiGenel_to_nav_Hayvanlar"
+            app:destination="@id/nav_Hayvanlar" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_NotDetay"
+        android:name="com.vuralsoftware.vbgs.fragments.notdetay.NotDetay"
+        android:label="Not Detayı"
+        tools:layout="@layout/fragment_notdetay" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_GenelNotlar"
+        android:name="com.vuralsoftware.vbgs.fragments.genelnot.Genelnot"
+        android:label="Notlar"
+        tools:layout="@layout/fragment_genelnot" >
+        <action
+            android:id="@+id/action_nav_GenelNotlar_to_nav_GenelNotEkle"
+            app:destination="@id/nav_GenelNotEkle" />
+        <action
+            android:id="@+id/action_nav_GenelNotlar_to_nav_GenelNotDetay"
+            app:destination="@id/nav_GenelNotDetay" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_GenelNotEkle"
+        android:name="com.vuralsoftware.vbgs.fragments.genelnotekle.Genelnotekle"
+        android:label="Not Ekle"
+        tools:layout="@layout/fragment_genelnotekle" >
+        <action
+            android:id="@+id/action_nav_GenelNotEkle_to_nav_GenelNotlar"
+            app:destination="@id/nav_GenelNotlar" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_GenelNotDetay"
+        android:name="com.vuralsoftware.vbgs.fragments.genelnotdetay.Genelnotdetay"
+        android:label="Not Detay"
+        tools:layout="@layout/fragment_genelnotdetay" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_PDF"
+        android:name="com.vuralsoftware.vbgs.fragments.pdf.pdf"
+        android:label="Pdf Görüntüleyici"
+        tools:layout="@layout/pdf_fragment" >
+
+    </fragment>
+
+</navigation>

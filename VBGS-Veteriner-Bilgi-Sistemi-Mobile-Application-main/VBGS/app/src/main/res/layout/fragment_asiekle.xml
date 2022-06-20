@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sayfabackground"
+    tools:context="com.vuralsoftware.vbgs.fragments.asiekle.Asiekle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clilacekle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="55dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="-122dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/asiad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="150dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Aşı Adı :"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="101dp"
+                    android:layout_marginTop="48dp"
+                    android:text="Durum:"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/durumasi"
+                    android:layout_width="154dp"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="51dp">
+
+                    <RadioButton
+                        android:id="@+id/yapildi"
+                        style="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="#000000"
+                        android:text="Yapıldı"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/yapilmadi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="#000000"
+                        android:text="Yapılmadı"
+                        android:textColor="#000000"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/asisaat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Aşı Uygulanacak Saat :"
+                    android:inputType="time"
+                    android:minHeight="48dp"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/asitarih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/input2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Aşı Uygulanacak Tarih :"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textColorHint="#000000" />
+
+                <Button
+                    android:id="@+id/kaydetbtnasi"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginBottom="124dp"
+                    android:background="@drawable/buttonbackground"
+                    android:text="Kaydet" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

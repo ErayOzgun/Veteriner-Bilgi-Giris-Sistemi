@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">VuralVilla</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home">AnaSayfa</string>
+    <string name="profile">Profil</string>
+    <string name="settings">Ayarlar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navbar">VBGS</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Hidayet Tutun</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ayarlar</string>
+
+    <string name="menu_profil">Profil</string>
+    <string name="menu_anasayfa">Anasayfa</string>
+    <string name="menu_ilac">İlaç Ekle</string>
+    <string name="menu_hayvan">Hayvan Ekle</string>
+    <string name="menu_disaaktar">Dışa Aktar</string>
+    <string name="menu_cikis">Çıkış</string>ng>
+    <string name="e_posta">E-Posta</string>
+    <string name="vbgs">VBGS</string>
+    <string name="giris_yap">Giriş Yap</string>
+    <string name="kayit_ol">Kayıt Ol</string>
+    <string name="ad">Ad</string>
+    <string name="sifre">Şifre</string>
+    <string name="email">Email</string>
+    <string name="kullaniciadi">Email</string>
+    <string name="notlar">Notlar</string>
+    <string name="hayvanlar">Hayvanlarım</string>
+    <string name="menu_hayvansorgula">Hayvan Sorgula</string>
+    <string-array name="array_animals">
+        <item>Bee</item>
+        <item>Cat</item>
+        <item>Cow</item>
+        <item>Dog</item>
+        <item>Frog</item>
+    </string-array>
+    <string name="title_activity_qroku">qroku</string>
+</resources>

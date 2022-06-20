@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context="com.vuralsoftware.vbgs.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="167dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/vbgs"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/giris_yap_email"
+            android:layout_width="263dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/input"
+            android:drawableStart="@drawable/adsoyad"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textWebEmailAddress"
+            android:padding="5dp"
+            android:text="admin@gmail.com"
+            android:textColor="@color/design_default_color_on_secondary"
+            tools:ignore="DuplicateClickableBoundsCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/giris_yap_sifre"
+            android:layout_width="262dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/input"
+            android:drawableLeft="@drawable/sifre"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint=" @string/sifre"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:text="admin123"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/girisbtn"
+            style="@android:style/Widget.Button"
+            android:layout_width="261dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="37dp"
+            android:background="@drawable/girisbuttonbackground"
+            android:imeOptions="actionSend"
+            android:onClick="giris_yap"
+            android:text="@string/giris_yap" />
+
+        <Button
+            android:id="@+id/kayitbtn"
+            style="@android:style/Widget.Button"
+            android:layout_width="261dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="38dp"
+            android:background="@drawable/girisbuttonbackground"
+            android:onClick="kayit_ol"
+            android:text="@string/kayit_ol" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
